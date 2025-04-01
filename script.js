@@ -1,3 +1,18 @@
+document.getElementById("whatsapp-button").addEventListener("click", function() {
+    document.getElementById("whatsapp-modal").style.display = "block";
+});
+
+document.getElementById("close-whatsapp-modal").addEventListener("click", function() {
+    document.getElementById("whatsapp-modal").style.display = "none";
+});
+
+// Cerrar modal si se hace clic fuera de la caja de contenido
+window.onclick = function(event) {
+    let modal = document.getElementById("whatsapp-modal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
 // Cart functionality
 let cart = [];
 const cartButton = document.getElementById('cart-button');
