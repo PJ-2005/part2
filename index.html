@@ -125,8 +125,7 @@
                     <span id="cart-total-price">$0.00</span>
                 </div>
                 <div class="cart-actions">
-                    <button class="btn btn-add-to-cart" style="flex: 2;">CONTINUE SHOPPING</button>
-                    <button class="btn">CHECKOUT</button>
+                    <button id="pay-now-btn" class="btn">PAY NOW</button>
                 </div>
             </div>
         </div>
@@ -187,6 +186,28 @@
             </form>
         </div>
     </div>
+<!-- Botón flotante de WhatsApp -->
+<div class="floating-whatsapp">
+    <button class="whatsapp-button" id="whatsapp-button">💬</button>
+</div>
+
+<!-- Modal de WhatsApp -->
+<div id="whatsapp-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Chat en WhatsApp</h3>
+            <button class="close-modal" id="close-whatsapp-modal">&times;</button>
+        </div>
+        
+        <div class="whatsapp-chat-preview">
+            <p>👋 ¡Hola! ¿En qué podemos ayudarte?</p>
+        </div>
+        
+        <div class="whatsapp-actions">
+            <a href="https://wa.me/1234567890?text=Hola,%20tengo%20una%20consulta" target="_blank" class="btn btn-whatsapp">Ir a WhatsApp</a>
+        </div>
+    </div>
+</div>
     
     <script src="script.js"></script>
 </body>
